@@ -5,7 +5,7 @@ import AppFooter from '../footer'
 function AppLayout({children}) {
   return (
     <>
-    <AppHeader />
+    <AppHeader className='m-0 p-0' />
         {children}
     <AppFooter />
     </>

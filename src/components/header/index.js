@@ -11,7 +11,7 @@ function AppHeader() {
   return (
     <>
     {['md'].map((expand) => (
-      <Navbar key={expand} bg="light" expand={expand} className="mb-3 p-0">
+      <Navbar key={expand} bg="light" expand={expand} className=" p-0">
         <Container >
           <Navbar.Brand href="#">
             <img src={HeaderIcon} height='50vh'/>
