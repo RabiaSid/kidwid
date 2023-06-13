@@ -1,11 +1,9 @@
-import AppLayout from '@/components/layout'
+import HomeSectionone from '@/Section/home-section-1'
 import React from 'react'
 
 function AppHome() {
   return (
-    <AppLayout>
-    <div>AppHome</div>
-    </AppLayout>
+    <HomeSectionone />
   )
 }
 

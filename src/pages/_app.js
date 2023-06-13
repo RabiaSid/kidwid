@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import AppLayout from "@/components/layout";
 import 'bootstrap/dist/css/bootstrap.css';
 import { useEffect } from "react";
+import AppHome from './home';
 
 // If loading a variable font, you don't need to specify the font weight
 const poppins = Poppins({ 
@@ -15,6 +16,7 @@ export default function App({ Component, pageProps }) {
 }, []);
   return (
   <AppLayout  className={poppins.className}>
-  <Component {...pageProps} />
+    <AppHome />
+  {/* <Component {...pageProps} /> */}
   </AppLayout>
 )}

@@ -6,7 +6,6 @@ function AppLayout({children}) {
   return (
     <>
     <AppHeader />
-        <h1>AppLayout</h1>
         {children}
     <AppFooter />
     </>
