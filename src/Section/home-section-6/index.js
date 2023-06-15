@@ -7,7 +7,7 @@ import ReviewCard from "@/components/card/Reviewcard";
 function HomeSectionSix() {
   return (
     <div
-      className="row d-flex justify-content-center m-0 py-5"
+      className="row d-flex justify-content-center m-0 py-5 p-0"
       style={{
         background: baseColors.backgroundLight,
       }}

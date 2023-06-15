@@ -7,7 +7,13 @@ const poppins = Poppins({
 
 
 export const styles = {
-    
+    HeaderText:{
+      fontFamily: `${poppins}`,
+        fontSize: '18px',
+        fontWeight: '600',
+        lineHeight: '30px',
+        color:baseColors.Black
+    },
     Heading1:{
         fontFamily: `${poppins}`,
         fontSize: '45px',
@@ -65,6 +71,13 @@ export const styles = {
         lineHeight: '35px',
         color:baseColors.White
       },
+      Text1BlackBold:{
+        fontFamily: `${poppins}`,
+        fontWeight:"400",
+        fontSize: '24px',
+        lineHeight: '35px',
+        color:baseColors.Black
+      },
       Text2bold:{
         fontFamily: `${poppins}`,
         fontSize: '24px',
@@ -74,23 +87,30 @@ export const styles = {
       },
       Text2Black:{
         fontFamily: `${poppins}`,
-        fontSize: '15px',
+        fontSize: '18px',
         fontWeight: '400',
         lineHeight: '30px',
         color:baseColors.Black
       },
       Text3:{
         fontFamily: `${poppins}`,
-        fontSize: '13px',
+        fontSize: '15px',
         fontWeight: '400',
         lineHeight: '20px',
         color:baseColors.Black
       },
       Text3Bold:{
         fontFamily: `${poppins}`,
-        fontSize: '15px',
+        fontSize: '18px',
         fontWeight: '700',
         lineHeight: '20px',
+        color:baseColors.Black
+      },
+      RresponsiveHeading: {
+        fontFamily: `${poppins}`,
+        fontSize: `calc(18px + 6 * ((100vw - 320px) / 680))`,
+        fontWeight: '700',
+        lineHeight: '40px',
         color:baseColors.Black
       },
       CheckBorder:{

@@ -5,7 +5,7 @@ import { AiFillStar } from "react-icons/ai";
 
 function ReviewCard() {
   return (
-    <div className="px-4 pt-3 pb-2 shadow-lg" style={{ border: "none", background:baseColors.White, borderRadius:'20px' }}>
+    <div className="px-4 pt-5 pb-4 shadow-lg" style={{ border: "none", background:baseColors.White, borderRadius:'20px',  }}>
       <div className="row">
        <p> <span style={styles.Text3Bold}>Kids Love it</span>
         <span style={styles.Text3}> - Sarah K., New York</span></p>

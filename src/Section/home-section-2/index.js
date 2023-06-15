@@ -11,7 +11,7 @@ function HomeSectionTwo() {
       style={{
         background: `url(${BlueBackground}) no-repeat`,
         height: "auto",
-        minHeight:"90vh",
+        minHeight:"70vh",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition:'center',

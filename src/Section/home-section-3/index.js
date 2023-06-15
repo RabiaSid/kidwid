@@ -23,7 +23,7 @@ function HomeSectionThree() {
       </div>
 
       <div className="text-center py-2 m-0 p-0 ">
-        <text>Education that Goes Beyond the Traditional Classroom</text>
+        <text style={styles.Text1BlackBold}>Education that Goes Beyond the Traditional Classroom</text>
       </div>
       <div className="col-12 col-md-11 col-lg-7  m-0">
         <div className="row m-0 d-flex justify-content-center align-items-center py-5">

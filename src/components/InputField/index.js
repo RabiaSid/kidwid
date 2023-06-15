@@ -1,7 +1,7 @@
 import React from "react";
 import baseColors from "@/constant";
 
-function InputField({ placeholder, children, type,  width, height, className }) {
+function InputField({ placeholder, children, type,  width, height, className, boxShadow }) {
   return (
     <input
       placeholder={placeholder}
@@ -14,6 +14,7 @@ function InputField({ placeholder, children, type,  width, height, className }) 
         textAlignVertical: "top",
         fontSize: 15,
         color: baseColors.Dark,
+        boxShadow:boxShadow
       }}
       className={className}
     >

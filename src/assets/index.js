@@ -11,6 +11,8 @@ import BannerImage3 from './bannerImage3.png'
 import BannerImage4 from './bannerImage4.png'
 import BannerImage5 from './bannerImage5.png'
 import BannerImage6 from './bannerImage6.png'
+import BannerImage7 from './bannerImage7.png'
+import BannerImage8 from './bannerImage8.png'
 import RobotIconFull from './RobotIconFull.png'
 import RobotButton from './RobotButton.png'
 import BlueFlower1 from './blueflower1.png'
@@ -19,6 +21,11 @@ import PurpleButterfly from './purplebutterfly.png'
 import FlowerWithFace from './flowerwithface.png'
 import FlameBook from './flamebook.png'
 import GLobal from './globe.png'
+import FaceBook from './facebook.png'
+import Instagram from './instagram.png'
+import Twitter from './twitter.png'
+import LinkedIn from './linkedin.png'
+import Arrow from './Arrow.png'
 
  
 export{
@@ -34,6 +41,8 @@ export{
     BannerImage4,
     BannerImage5,
     BannerImage6,
+    BannerImage7,
+    BannerImage8,
     RobotIconFull,
     RobotButton,
     RainbowBackground,
@@ -42,5 +51,10 @@ export{
     PurpleButterfly,
     FlowerWithFace,
     FlameBook,
-    GLobal
+    GLobal,
+    FaceBook,
+    Instagram,
+    Twitter,
+    LinkedIn,
+    Arrow
 }

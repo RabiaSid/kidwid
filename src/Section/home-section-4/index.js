@@ -8,9 +8,10 @@ import React from "react";
 function HomeSectionFour() {
   return (
     <div
-      className="row d-flex justify-content-center m-0 "
+      className="row d-flex justify-content-center m-0  py-5 my-5"
       style={{
         background: baseColors.White,
+        
       }}
     >
       <div
@@ -31,7 +32,7 @@ function HomeSectionFour() {
       </div>
 
       <div className="text-center py-3 m-0 p-0 ">
-        <text>
+        <text style={styles.Text1BlackBold}>
           Unlock Your Child's Potential with Our Wide Range of Engaging Topics
         </text>
       </div>
@@ -44,6 +45,7 @@ function HomeSectionFour() {
               backgroundColor={baseColors.OrangeColor}
               width={"15vw"}
               height={"6vh"}
+              fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
             />
@@ -55,6 +57,7 @@ function HomeSectionFour() {
               backgroundColor={baseColors.PinkColor}
               width={"15vw"}
               height={"6vh"}
+              fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
             />
@@ -66,6 +69,7 @@ function HomeSectionFour() {
               backgroundColor={baseColors.GreenColor}
               width={"15vw"}
               height={"6vh"}
+              fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
             />
@@ -79,6 +83,7 @@ function HomeSectionFour() {
               backgroundColor={baseColors.PurpleColor}
               width={"15vw"}
               height={"6vh"}
+              fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
             />
@@ -90,6 +95,7 @@ function HomeSectionFour() {
               backgroundColor={baseColors.BlueColor}
               width={"15vw"}
               height={"6vh"}
+              fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
             />
@@ -101,6 +107,7 @@ function HomeSectionFour() {
               backgroundColor={baseColors.PinkColor}
               width={"15vw"}
               height={"6vh"}
+              fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
             />
@@ -112,6 +119,7 @@ function HomeSectionFour() {
               backgroundColor={baseColors.PurpleColor}
               width={"15vw"}
               height={"6vh"}
+              fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
             />
@@ -125,6 +133,7 @@ function HomeSectionFour() {
               backgroundColor={baseColors.GreenColor}
               width={"15vw"}
               height={"6vh"}
+              fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
             />
@@ -136,6 +145,7 @@ function HomeSectionFour() {
               backgroundColor={baseColors.OrangeColor}
               width={"15vw"}
               height={"6vh"}
+              fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
             />
@@ -147,6 +157,7 @@ function HomeSectionFour() {
               backgroundColor={baseColors.BlueColor}
               width={"15vw"}
               height={"6vh"}
+              fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
             />
@@ -160,6 +171,7 @@ function HomeSectionFour() {
               backgroundColor={baseColors.GreenColor}
               width={"15vw"}
               height={"6vh"}
+              fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
             />
@@ -171,6 +183,7 @@ function HomeSectionFour() {
               backgroundColor={baseColors.PinkColor}
               width={"15vw"}
               height={"6vh"}
+              fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
             />
@@ -182,6 +195,7 @@ function HomeSectionFour() {
               backgroundColor={baseColors.PurpleColor}
               width={"15vw"}
               height={"6vh"}
+              fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
             />
@@ -193,6 +207,7 @@ function HomeSectionFour() {
               backgroundColor={baseColors.PinkColor}
               width={"15vw"}
               height={"6vh"}
+              fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
             />

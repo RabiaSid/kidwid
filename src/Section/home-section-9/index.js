@@ -1,30 +1,37 @@
 import React from "react";
-import { BannerImage5, BannerImage6 } from "@/assets";
+import {
+  BannerImage5,
+  BannerImage6,
+  BannerImage7,
+  BannerImage8,
+} from "@/assets";
 import { styles } from "@/styles/style";
 import baseColors from "@/constant";
 
-function HomeSectionFive() {
+function HomeSectionNine() {
   return (
     <div
-      className="row d-flex justify-content-center m-0 py-5"
+      className="row d-flex justify-content-center m-0 py-5 mt-5"
       style={{
         background: `linear-gradient(to bottom, ${baseColors.backgroundLight} 16%, ${baseColors.White} 100%)`,
       }}
     >
       <div className="text-center py-1 m-0 p-0 ">
-        <span style={styles.Heading2}>How It Works?</span>
+        <span style={styles.Heading2}>Our Vision</span>
       </div>
 
       <div className="text-center py-2 m-0 p-0 ">
-        <text style={styles.Text1BlackBold}>8 Steps to Begin Your Child’s Journey</text>
+        <text style={styles.Text1BlackBold}>
+          Igniting the Flames of Knowledge within each Child and Parent!
+        </text>
       </div>
       <div className="col-12 col-md-11 col-lg-7  m-0">
         <div className="row m-0 d-flex justify-content-center align-items-center py-5">
           <div className="col-12 col-md-8 col-xl-8 d-flex justify-content-start align-items-center ps-0 me-auto  pt-5 pt-md-0">
             <div className="row m-0">
               <div className="text-left py-3 m-0 p-0 ">
-                <text style={styles.Text2bold}>
-                  1. Sign Up and Create Your Child's Profile
+                <text style={styles.Heading2}>
+                  Empower Children to Reach Limitless Potential
                 </text>
               </div>
               <div className="col-10 text-justify py-1 m-0 p-0 ">
@@ -40,40 +47,49 @@ function HomeSectionFive() {
             </div>
           </div>
           <div className="col-12 col-md-4 col-xl-4 d-flex justify-content-center">
-            <img src={BannerImage5} style={{ height: "50vh", width: "auto" }} />
+            <img src={BannerImage8} style={{ height: "35vh", width: "auto" }} />
           </div>
         </div>
       </div>
-      <div className="row d-flex justify-content-center">
-      <div className=" col-11 col-md-8 col-lg-6 text-center py-1 m-0 p-0 ">
-        <span style={styles.Heading2}>
-          Your Child's Early Education is Important
-        </span>
+      <div className="col-12 col-md-11 col-lg-7">
+      <div className="row d-flex justify-content-center align-items-center">
+          <span style={styles.Heading2}>
+            Revolutionize Education with AI-Driven Technologies
+          </span>
+                <text style={styles.Text2Black}>
+                  As pioneers in AI-driven education, we refuse to settle for
+                  mediocrity. We are determined to break free from the confines
+                  of traditional learning methodologies and forge a new path. A
+                  path that leads to a brighter future, a future where every
+                  child has access to the tools and resources they need to
+                  thrive in this ever-evolving world.
+                </text>
       </div>
       </div>
       <div className="col-12 col-md-11 col-lg-7  m-0">
-        <div className="row m-0 d-flex justify-content-center align-items-center py-5">
+        <div className="row m-0 d-flex justify-content-center align-items-center">
           <div className="col-12 col-md-5  col-xl-5 d-flex justify-content-center">
             <img
-              src={BannerImage6}
-              style={{ height: "50vh", width: "auto" }}
+              src={BannerImage7}
+              style={{ height: "60vh", width: "auto" }}
               className="img-fluid"
             />
           </div>
-          <div className="col-12 col-md-7  col-xl-7  ps-0 me-auto  pt-5 pt-md-0">
+          <div className="col-12 col-md-7  col-xl-7  ps-0 me-auto ">
             <div className="row d-flex justify-content-end align-items-center m-0">
               <div className="col-10 m-0 p-0 ">
-                <p className="text-end" style={styles.Text2bold}>
-                  Personalized Learning Pathways
+                <p className="text-end" style={styles.Heading2}>
+                  Forge a New Path to a Brighter Future
                 </p>
               </div>
               <div className=" text-justify m-0 p-0 ">
                 <text style={styles.Text2Black}>
-                  KidWiz's AI-powered companion creates a personalized learning
-                  pathway for your child, adapting the curriculum and activities
-                  to their individual needs and interests. This tailor-made
-                  education ensures a more effective and enjoyable learning
-                  experience.
+                  As pioneers in AI-driven education, we refuse to settle for
+                  mediocrity. We are determined to break free from the confines
+                  of traditional learning methodologies and forge a new path. A
+                  path that leads to a brighter future, a future where every
+                  child has access to the tools and resources they need to
+                  thrive in this ever-evolving world.
                 </text>
               </div>
             </div>
@@ -84,4 +100,4 @@ function HomeSectionFive() {
   );
 }
 
-export default HomeSectionFive;
+export default HomeSectionNine;
