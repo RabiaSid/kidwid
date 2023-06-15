@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PrimaryButton({ height, width, color, backgroundColor, title, fontWeight, borderRadius, fontSize, opacity }) {
+function PrimaryButton({ className, height, width, color, backgroundColor, title, fontWeight, borderRadius, fontSize, opacity }) {
     const border = backgroundColor === 'transparent' ? `2px solid ${baseColors.primaryColor}` : "none"
 
     const styles = {
@@ -22,7 +22,7 @@ function PrimaryButton({ height, width, color, backgroundColor, title, fontWeigh
     }
 
     return (
-        <button style={styles.button}>
+        <button style={styles.button} className={className}>
             {title}
         </button>
     )

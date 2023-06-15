@@ -10,7 +10,7 @@ export const styles = {
     
     Heading1:{
         fontFamily: `${poppins}`,
-        fontSize: '50px',
+        fontSize: '45px',
         fontWeight: '700',
         lineHeight: '70px',
         color:baseColors.Black
@@ -25,7 +25,7 @@ export const styles = {
       },
       Heading1White:{
         fontFamily: `${poppins}`,
-        fontSize: '40px',
+        fontSize: '35px',
         fontWeight: '700',
         lineHeight: '70px',
         color:baseColors.White
@@ -67,7 +67,7 @@ export const styles = {
       },
       Text2bold:{
         fontFamily: `${poppins}`,
-        fontSize: '28px',
+        fontSize: '24px',
         fontWeight: '700',
         lineHeight: '35px',
         color:baseColors.Black
@@ -77,6 +77,20 @@ export const styles = {
         fontSize: '15px',
         fontWeight: '400',
         lineHeight: '30px',
+        color:baseColors.Black
+      },
+      Text3:{
+        fontFamily: `${poppins}`,
+        fontSize: '13px',
+        fontWeight: '400',
+        lineHeight: '20px',
+        color:baseColors.Black
+      },
+      Text3Bold:{
+        fontFamily: `${poppins}`,
+        fontSize: '15px',
+        fontWeight: '700',
+        lineHeight: '20px',
         color:baseColors.Black
       },
       CheckBorder:{

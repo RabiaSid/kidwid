@@ -1,19 +1,20 @@
 import { BlueBackground } from "@/assets";
 import React from "react";
 import { styles } from "@/styles/style";
+import baseColors from "@/constant";
 
 function HomeSectionTwo() {
   return (
+    <div className="row m-0" style={{background: `linear-gradient(to bottom, ${baseColors.White}  16%, ${baseColors.backgroundLight}  100%)`}}>
     <div
       className=" d-flex align-items-center justify-content-center  p-0 "
       style={{
         background: `url(${BlueBackground}) no-repeat`,
         height: "auto",
-        minHeight:"70vh",
+        minHeight:"90vh",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition:'center',
-        marginTop:-30
       }}
     >
       <div className="container p-2">
@@ -46,6 +47,7 @@ function HomeSectionTwo() {
       </div>
       </div>
     </div>
+   </div>
   );
 }
 

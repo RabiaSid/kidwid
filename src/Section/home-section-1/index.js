@@ -7,7 +7,7 @@ import MessageSend from "@/components/chat/MessageSend";
 
 function HomeSectionone() {
   return (
-    <div className="row d-flex justify-content-center m-0 pb-5" style={{background:baseColors.White, }}>
+    <div className="row d-flex justify-content-center m-0 " style={{background:baseColors.White, }}>
       <div
         className="col-11 "
         style={{
