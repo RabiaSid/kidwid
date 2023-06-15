@@ -3,6 +3,7 @@ import { BlueFlower1 } from "@/assets";
 import { styles } from "@/styles/style";
 import baseColors from "@/constant";
 import ReviewCard from "@/components/card/Reviewcard";
+// import ReviewPagination from "@/components/ReviewPagination";
 
 function HomeSectionSix() {
   return (
@@ -35,7 +36,7 @@ function HomeSectionSix() {
           </div>
         </div>
       </div>
-    </div>
+     </div>
   );
 }
 
