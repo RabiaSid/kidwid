@@ -1,101 +1,343 @@
-import baseColors from '@/constant'
-import React from 'react'
+import baseColors from "@/constant";
+import React from "react";
 
 function Accordion() {
   return (
     <div className="accordion accordion-flush" id="accordionFlushExample">
-    <div className="accordion-item" style={{background:baseColors.GreenColor , color:baseColors.White}}>
-      <h2 className="accordion-header" id="flush-headingOne">
-        <button className="accordion-button collapsed" style={{background:baseColors.GreenColor , color:baseColors.White }}  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Accordion Item #1
-        </button>
-      </h2>
-      <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the  This is the first item's accordion body.</div>
+      <div
+        className="accordion-item"
+        style={{ background: baseColors.GreenColor, color: baseColors.White }}
+      >
+        <h2 className="accordion-header" id="flush-headingOne">
+          <button
+            className="accordion-button collapsed"
+            style={{
+              background: baseColors.GreenColor,
+              color: baseColors.White,
+              border:'2px solid' ,
+              borderColor:baseColors.White,
+              borderBottom:'0',
+            }}
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            What age group is KidWiz designed for?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          className="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+          style={{border:'none'}}
+        >
+          <div className="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
+            risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
+            hendrerit cursus vestibulum.
+          </div>
+        </div>
+      </div>
+      <div
+        className="accordion-item"
+        style={{ background: baseColors.GreenColor, color: baseColors.White }}
+      >
+        <h2 className="accordion-header" id="flush-headingTwo">
+          <button
+            className="accordion-button collapsed"
+            style={{
+              background: baseColors.GreenColor,
+              color: baseColors.White,
+              border:'2px solid' ,
+              borderColor:baseColors.White,
+              borderBottom:'0',
+            }}
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            How does the AI-Powered Personalized Learning Companion work?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          className="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+          style={{border:'none'}}
+        >
+          <div className="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
+            risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
+            hendrerit cursus vestibulum.
+          </div>
+        </div>
+      </div>
+      <div
+        className="accordion-item"
+        style={{ background: baseColors.GreenColor, color: baseColors.White }}
+      >
+        <h2 className="accordion-header" id="flush-headingThree">
+          <button
+            className="accordion-button collapsed"
+            style={{
+              background: baseColors.GreenColor,
+              color: baseColors.White,
+              border:'2px solid' ,
+              borderColor:baseColors.White,
+              borderBottom:'0',
+            }}
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            What subjects and skills does KidWiz cover?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          className="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+          style={{border:'none'}}
+        >
+          <div className="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
+            risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
+            hendrerit cursus vestibulum.
+          </div>
+        </div>
+      </div>
+      <div
+        className="accordion-item"
+        style={{ background: baseColors.GreenColor, color: baseColors.White }}
+      >
+        <h2 className="accordion-header" id="flush-headingFour">
+          <button
+            className="accordion-button collapsed"
+            style={{
+              background: baseColors.GreenColor,
+              color: baseColors.White,
+              border:'2px solid' ,
+              borderColor:baseColors.White,
+              borderBottom:'0',
+            }}
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour"
+            aria-expanded="false"
+            aria-controls="flush-collapseFour"
+          >
+            Can I use KidWiz alongside other early childhood education programs?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFour"
+          className="accordion-collapse collapse"
+          aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample"
+          style={{border:'none'}}
+        >
+          <div className="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
+            risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
+            hendrerit cursus vestibulum.
+          </div>
+        </div>
+      </div>
+      <div
+        className="accordion-item"
+        style={{ background: baseColors.GreenColor, color: baseColors.White }}
+      >
+        <h2 className="accordion-header" id="flush-headingFive">
+          <button
+            className="accordion-button collapsed"
+            style={{
+              background: baseColors.GreenColor,
+              color: baseColors.White,
+              border:'2px solid' ,
+              borderColor:baseColors.White,
+              borderBottom:'0',
+            }}
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive"
+            aria-expanded="false"
+            aria-controls="flush-collapseFive"
+          >
+            Is KidWiz compatible with different devices?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseFive"
+          className="accordion-collapse collapse"
+          aria-labelledby="flush-headingFive"
+          data-bs-parent="#accordionFlushExample"
+          style={{border:'none'}}
+        >
+          <div className="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
+            risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
+            hendrerit cursus vestibulum.
+          </div>
+        </div>
+      </div>
+      <div
+        className="accordion-item"
+        style={{ background: baseColors.GreenColor, color: baseColors.White }}
+      >
+        <h2 className="accordion-header" id="flush-headingSix">
+          <button
+            className="accordion-button collapsed"
+            style={{
+              background: baseColors.GreenColor,
+              color: baseColors.White,
+              border:'2px solid' ,
+              borderColor:baseColors.White,
+              borderBottom:'0',
+            }}
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix"
+            aria-expanded="false"
+            aria-controls="flush-collapseSix"
+          >
+            How do I choose the right subscription plan for my family?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSix"
+          className="accordion-collapse collapse"
+          aria-labelledby="flush-headingSix"
+          data-bs-parent="#accordionFlushExample"
+          style={{border:'none'}}
+        >
+          <div className="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
+            risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
+            hendrerit cursus vestibulum.
+          </div>
+        </div>
+      </div>
+      <div
+        className="accordion-item"
+        style={{ background: baseColors.GreenColor, color: baseColors.White }}
+      >
+        <h2 className="accordion-header" id="flush-headingSeven">
+          <button
+            className="accordion-button collapsed"
+            style={{
+              background: baseColors.GreenColor,
+              color: baseColors.White,
+              border:'2px solid' ,
+              borderColor:baseColors.White,
+              borderBottom:'0',
+            }}
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSeven"
+            aria-expanded="false"
+            aria-controls="flush-collapseSeven"
+          >
+            How do I cancel or change my subscription plan?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseSeven"
+          className="accordion-collapse collapse"
+          aria-labelledby="flush-headingSeven"
+          data-bs-parent="#accordionFlushExample"
+          style={{border:'none'}}
+        >
+          <div className="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
+            risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
+            hendrerit cursus vestibulum.
+          </div>
+        </div>
+      </div>
+      <div
+        className="accordion-item"
+        style={{ background: baseColors.GreenColor, color: baseColors.White }}
+      >
+        <h2 className="accordion-header" id="flush-headingEight">
+          <button
+            className="accordion-button collapsed"
+            style={{
+              background: baseColors.GreenColor,
+              color: baseColors.White,
+              border:'2px solid' ,
+              borderColor:baseColors.White,
+              borderBottom:'0',
+            }}
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseEight"
+            aria-expanded="false"
+            aria-controls="flush-collapseEight"
+          >
+            Is my child's data safe with KidWiz?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseEight"
+          className="accordion-collapse collapse"
+          aria-labelledby="flush-headingEight"
+          data-bs-parent="#accordionFlushExample"
+          style={{border:'none'}}
+        >
+          <div className="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
+            risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
+            hendrerit cursus vestibulum.
+          </div>
+        </div>
+      </div>
+      <div
+        className="accordion-item"
+        style={{ background: baseColors.GreenColor, color: baseColors.White }}
+      >
+        <h2 className="accordion-header" id="flush-headingNine">
+          <button
+            className="accordion-button collapsed"
+            style={{
+              background: baseColors.GreenColor,
+              color: baseColors.White,
+              border:'2px solid' ,
+              borderColor:baseColors.White,
+            }}
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseNine"
+            aria-expanded="false"
+            aria-controls="flush-collapseNine"
+          >
+            How can I get in touch with KidWiz for additional support or questions?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseNine"
+          className="accordion-collapse collapse"
+          aria-labelledby="flush-headingNine"
+          data-bs-parent="#accordionFlushExample"
+          style={{border:'none'}}
+        >
+          <div className="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
+            risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
+            hendrerit cursus vestibulum.
+          </div>
+        </div>
       </div>
     </div>
-    <div className="accordion-item" style={{background:baseColors.GreenColor , color:baseColors.White}}>
-      <h2 className="accordion-header" id="flush-headingTwo">
-        <button className="accordion-button collapsed" style={{background:baseColors.GreenColor , color:baseColors.White }}  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-          Accordion Item #2
-        </button>
-      </h2>
-      <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-        <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the  This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-      </div>
-    </div>
-    <div className="accordion-item" style={{background:baseColors.GreenColor , color:baseColors.White}}>
-      <h2 className="accordion-header" id="flush-headingThree">
-        <button className="accordion-button collapsed" style={{background:baseColors.GreenColor , color:baseColors.White }}  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          Accordion Item #3
-        </button>
-      </h2>
-      <div id="flush-collapseThree" className="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the  This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-      </div>
-    </div>
-    <div className="accordion-item" style={{background:baseColors.GreenColor , color:baseColors.White}}>
-      <h2 className="accordion-header" id="flush-headingFour">
-        <button className="accordion-button collapsed" style={{background:baseColors.GreenColor , color:baseColors.White }}  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-          Accordion Item #4
-        </button>
-      </h2>
-      <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the  This is the first item's accordion body.</div>
-      </div>
-    </div>
-    <div className="accordion-item" style={{background:baseColors.GreenColor , color:baseColors.White}}>
-      <h2 className="accordion-header" id="flush-headingFive">
-        <button className="accordion-button collapsed" style={{background:baseColors.GreenColor , color:baseColors.White }}  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Accordion Item #5
-        </button>
-      </h2>
-      <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the  This is the first item's accordion body.</div>
-      </div>
-    </div>
-    <div className="accordion-item" style={{background:baseColors.GreenColor , color:baseColors.White}}>
-      <h2 className="accordion-header" id="flush-headingOne">
-        <button className="accordion-button collapsed" style={{background:baseColors.GreenColor , color:baseColors.White }}  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Accordion Item #1
-        </button>
-      </h2>
-      <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the  This is the first item's accordion body.</div>
-      </div>
-    </div>
-    <div className="accordion-item" style={{background:baseColors.GreenColor , color:baseColors.White}}>
-      <h2 className="accordion-header" id="flush-headingOne">
-        <button className="accordion-button collapsed" style={{background:baseColors.GreenColor , color:baseColors.White }}  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Accordion Item #1
-        </button>
-      </h2>
-      <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the  This is the first item's accordion body.</div>
-      </div>
-    </div>
-    <div className="accordion-item" style={{background:baseColors.GreenColor , color:baseColors.White}}>
-      <h2 className="accordion-header" id="flush-headingOne">
-        <button className="accordion-button collapsed" style={{background:baseColors.GreenColor , color:baseColors.White }}  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Accordion Item #1
-        </button>
-      </h2>
-      <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the  This is the first item's accordion body.</div>
-      </div>
-    </div>
-    <div className="accordion-item" style={{background:baseColors.GreenColor , color:baseColors.White}}>
-      <h2 className="accordion-header" id="flush-headingTwo">
-        <button className="accordion-button collapsed" style={{background:baseColors.GreenColor , color:baseColors.White }}  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-          Accordion Item #2
-        </button>
-      </h2>
-      <div id="flush-collapseTwo" className="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-        <div className="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the  This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-      </div>
-    </div>
-  </div>
-  )
+  );
 }
 
-export default Accordion
+export default Accordion;

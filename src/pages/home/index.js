@@ -1,4 +1,5 @@
 import HomeSectionone from '@/Section/home-section-1'
+import HomeSectionTen from '@/Section/home-section-10'
 import HomeSectionTwo from '@/Section/home-section-2'
 import HomeSectionThree from '@/Section/home-section-3'
 import HomeSectionFour from '@/Section/home-section-4'
@@ -18,6 +19,7 @@ function AppHome() {
     <HomeSectionFive />
     <HomeSectionSix />
     <HomeSectionEight />
+    <HomeSectionTen />
     </div>
   )
 }
