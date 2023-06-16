@@ -1,64 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
 import { BlueFlower1 } from "@/assets";
 import { styles } from "@/styles/style";
 import baseColors from "@/constant";
-import ReviewCard from "@/components/card/Reviewcard";
+import { AiFillStar } from "react-icons/ai";
 
-function ReviewPagination() {
+const ReviewPagination = ({ images }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const goToNextImage = () => {
+    if (currentImageIndex < images.length - 1) {
+      setCurrentImageIndex(currentImageIndex + 1);
+    }
+  };
+
+  const goToPreviousImage = () => {
+    if (currentImageIndex > 0) {
+      setCurrentImageIndex(currentImageIndex - 1);
+    }
+  };
+
+  const goToImage = (index) => {
+    setCurrentImageIndex(index);
+  };
+
   return (
     <div
-      id="myCarousel"
-      className="carousel slide "
-      data-bs-ride="carousel"
-      style={{ border: "3px solid red" }}
+      className="row m-0 d-flex justify-content-center"
+      style={{
+        background: baseColors.backgroundLight,
+        border:'1px solid red'
+      }}
     >
-      <div
-        className="row d-flex justify-content-center m-0 py-5 p-0 "
-        style={{
-          background: baseColors.backgroundLight,
-        }}
-      >
-        <div className="col-12 col-md-11 col-lg-8  m-0">
-          <div className="row m-0 d-flex justify-content-center align-items-start ">
-            <div className="col-12 col-md-8 col-xl-7 d-flex justify-content-start align-items-center ps-0 me-auto  pt-5 pt-md-0">
+      <div className="col-11">
+      <div className="row d-flex justify-content-around align-items-center m-0 py-5 p-0" style={{
+        border:'1px solid red'
+      }}>
+            <div className="col-12 col-md-8 col-xl-6 d-flex  align-items-center ps-0 me-auto  pt-5 pt-md-0" style={{
+        border:'1px solid red'
+      }}>
               <div className="row m-0">
                 <div className="text-left py-3 m-0 p-0 ">
                   <text style={styles.Text2bold}>
                     Don't take our word for It: Uncover the Life-Changing Impact
                     of KidWiz on Families
                   </text>
-                </div>
-                <div>
-                  <a
-                    className="carousel-control-prev"
-                    href="#myCarousel"
-                    data-bs-slide="prev"
-                    style={{ border: "3px solid purple" }}
-                  >
-                    <span className="carousel-control-prev-icon"></span>
-                  </a>
-                  <a
-                    className="carousel-control-next"
-                    href="#myCarousel"
-                    data-bs-slide="next"
-                    style={{ border: "3px solid purple" }}
-                  >
-                    <span className="carousel-control-next-icon"></span>
-                  </a>
-                </div>
-                <div className="">
-                  <ol
-                    className="carousel-indicators"
-                    style={{ border: "3px solid black" }}
-                  >
-                    <li
-                      data-bs-target="#myCarousel"
-                      data-bs-slide-to="0"
-                      className="active"
-                    ></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-                  </ol>
+                  <div className="slider-navigation col-6">
+                    <button
+                      className="btn btn-primary"
+                      onClick={goToPreviousImage}
+                    >
+                      Previous
+                    </button>
+                    <button className="btn btn-primary" onClick={goToNextImage}>
+                      Next
+                    </button>
+                    <ul className="pagination">
+                      {images.map((image, index) => (
+                        <li
+                          key={index}
+                          className={`page-item ${
+                            index === currentImageIndex ? "active" : ""
+                          }`}
+                          onClick={() => goToImage(index)}
+                        >
+                          <button className="page-link">{index + 1}</button>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
                 <div className="col-4 text-justify py-1 m-0 p-0 ">
                   <img
@@ -68,60 +77,64 @@ function ReviewPagination() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-4 col-xl-5 d-flex justify-content-center">
-              <div
-                className="carousel-inner"
-                style={{ border: "3px solid orange" }}
-              >
-                <div className="carousel-item active">
-                  <ReviewCard alt="Slide 1" />
-                </div>
-                <div className="carousel-item">
-                  <ReviewCard alt="Slide 2" />
-                </div>
-                <div className="carousel-item">
-                  <ReviewCard alt="Slide 3" />
-                </div>
+            <div className="col-12 col-md-4 col-xl-5 d-flex justify-content-center" style={{
+        border:'1px solid red'
+      }}>
+              <div className="slider-images col-6">
+                {/* <div
+                  key={images?.key}
+                  className="px-4 pt-5 pb-4 shadow-lg"
+                  style={{
+                    border: "none",
+                    background: baseColors.White,
+                    borderRadius: "20px",
+                  }}
+                >
+                  <div className="row">
+                    <p>
+                      <span style={styles.Text3Bold}>Kids Love it</span>
+                      <span style={styles.Text3}> - Sarah K., New York</span>
+                    </p>
+                  </div>
+                  <div className="row py-1">
+                    <span style={styles.Text3}>
+                      KidWiz has been a game-changer for our family! My daughter
+                      loves her personalized learning plan, and I've seen a
+                      significant improvement in her engagement and motivation
+                      to learn. The AI companion adapts to her unique needs, and
+                      I couldn't be happier with the results. KidWiz is the
+                      future of early childhood education.
+                    </span>
+                  </div>
+                  <div className="row ">
+                    <p>
+                      {" "}
+                      <span>
+                        <AiFillStar />
+                      </span>
+                      <span>
+                        <AiFillStar />
+                      </span>
+                      <span>
+                        <AiFillStar />
+                      </span>
+                      <span>
+                        <AiFillStar />
+                      </span>
+                      <span>
+                        <AiFillStar />
+                      </span>
+                    </p>
+                  </div>
+                </div> */}
+                <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
               </div>
-            </div>
-          </div>
-          <div style={{ background: baseColors.GreenColor }}></div>
-        </div>
+      </div>
+          
+      </div>
       </div>
     </div>
   );
-}
+};
 
 export default ReviewPagination;
-
-{
-  /*//     <div id="myCarousel" className="carousel slide" data-bs-ride="carousel" style={{border:'3px solid red'}}>
-//    
-    <ol className="carousel-indicators" style={{border:'3px solid white'}}>
-        <li data-bs-target="#myCarousel" data-bs-slide-to="0" className="active"></li>
-        <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-        <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-    </ol>
-
-//     
-    // <div className="carousel-inner" style={{border:'3px solid orange'}}>
-    //     <div className="carousel-item active">
-    //         <img src="https://showwp.com/demos/ws-garden/upload/blog_single_01.jpg" className="d-block w-100" alt="Slide 1"/>
-    //     </div>
-    //     <div className="carousel-item">
-    //         <img src="https://showwp.com/demos/ws-garden/upload/blog_single_02.jpg" className="d-block w-100" alt="Slide 2"/>
-    //     </div>
-    //     <div className="carousel-item">
-    //         <img src="https://showwp.com/demos/ws-garden/upload/blog_single_01.jpg" className="d-block w-100" alt="Slide 3"/>
-    //     </div>
-    // </div>
-
-//     
-    // <a className="carousel-control-prev" href="#myCarousel" data-bs-slide="prev" style={{border:'3px solid purple'}}>
-    //     <span className="carousel-control-prev-icon"></span>
-    // </a>
-    // <a className="carousel-control-next" href="#myCarousel" data-bs-slide="next" style={{border:'3px solid purple'}}>
-    //     <span className="carousel-control-next-icon"></span>
-    // </a>
- </div> */
-}

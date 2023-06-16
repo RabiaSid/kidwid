@@ -5,13 +5,14 @@ import baseColors from "@/constant";
 
 function HomeSectionFive() {
   return (
+    
     <div
-      className="row d-flex justify-content-center m-0 py-5"
+      className="row d-flex justify-content-center m-0 py-5 position-absoulte"
       style={{
         background: `linear-gradient(to bottom, ${baseColors.backgroundLight} 16%, ${baseColors.White} 100%)`,
       }}
     >
-      <div className="text-center py-1 m-0 p-0 ">
+      <div className="text-center py-1 m-0 p-0 position-sticky" style={{top:'0', zIndex:1}}>
         <span style={styles.Heading2}>How It Works?</span>
       </div>
 
@@ -81,6 +82,8 @@ function HomeSectionFive() {
         </div>
       </div>
     </div>
+    
+
   );
 }
 

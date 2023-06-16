@@ -20,7 +20,7 @@ function HomeSectionSeven() {
           Unleash Learning:<span style={styles.Text1Bold}> 7-Day FREE Trial </span> of KidWiz! 🧠
         </text>
       </div>
-      <div className="col-8 col-md-5 col-lg-5 col-xl-3 my-3" >
+      <div className="col-8 col-md-5 col-lg-5 col-xl-3 my-3 " >
         <div className="row d-flex justify-content-center">
           <div className="col-8">
             <div
@@ -68,6 +68,9 @@ function HomeSectionSeven() {
           </div>
           </div>
         </div>
+      </div>
+      <div>
+        
       </div>
     </div>
   );
