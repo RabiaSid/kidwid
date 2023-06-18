@@ -2,6 +2,7 @@ import React from "react";
 import { Arrow, BannerImage5, BannerImage6 } from "@/assets";
 import { styles } from "@/styles/style";
 import baseColors from "@/constant";
+import PlanSwitchSelector from "@/components/SwitchSelector";
 
 function HomeSectionSeven() {
   return (
@@ -22,7 +23,7 @@ function HomeSectionSeven() {
       </div>
       <div className="col-8 col-md-5 col-lg-5 col-xl-3 my-3 " >
         <div className="row d-flex justify-content-center">
-          <div className="col-8">
+          {/* <div className="col-8">
             <div
               className="row p-2 shadow d-flex justify-content-center align-items-center"
               style={{
@@ -54,7 +55,8 @@ function HomeSectionSeven() {
                 </text>
               </div>
             </div>
-          </div>
+          </div> */}
+          <PlanSwitchSelector />
           <div className="col-4 d-flex justify-content-center align-items-end">
                 <text
                 style={{fontSize:"15px", color: baseColors.GreenColor}}

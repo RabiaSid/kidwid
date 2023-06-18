@@ -1,11 +1,8 @@
 import React from "react";
 import {
-  BannerImage1,
   BannerImage2,
   BannerImage3,
   BannerImage4,
-  RobotButton,
-  WhiteBlueBackground,
 } from "@/assets";
 import { styles } from "@/styles/style";
 import baseColors from "@/constant";
@@ -19,12 +16,19 @@ function HomeSectionThree() {
       }}
     >
       
-      <div className="text-center py-1 m-0 p-0 ">
+      <div className="text-center py-1 m-0 p-0 position-sticky fixed-top row"
+       style={{
+            margin: 0,
+            padding: 0,
+            width: "auto",
+            height: "auto",
+            backgroundColor: "white",
+            top:'90px'
+            
+          }}>
         <span style={styles.Heading2}>What We Offer</span>
-      </div>
-
-      <div className="text-center py-2 m-0 p-0 ">
-        <text style={styles.Text1BlackBold}>Education that Goes Beyond the Traditional Classroom</text>
+        <text className="text-center py-2 m-0 p-0 " style={styles.Text1BlackBold}>Education that Goes Beyond the Traditional Classroom</text>
+        
       </div>
       
       <div className="col-12 col-md-11 col-lg-7  m-0">
@@ -146,23 +150,6 @@ function HomeSectionThree() {
               </div>
             </div>
           </div>
-          {/* <div className="col-6 ps-0 me-auto  pt-5 pt-md-0">
-            <div className="row  m-0"
-            style={{
-              background: `url(${RobotButton})`,
-              height: "20vh",
-              width: "100%",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
-                
-                <text>
-                GET STARTED FOR FREE!
-                </text>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

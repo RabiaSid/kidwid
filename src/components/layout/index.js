@@ -29,6 +29,7 @@ function AppLayout({children}) {
             height: "auto",
             backgroundColor: "white",
           }}
+          className=""
         >
           {children}
         </Content>
