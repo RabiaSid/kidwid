@@ -2,9 +2,9 @@ import React from "react";
 import baseColors from "@/constant";
 import {UserIcon} from "@/assets";
 
-function MessageSend({title}) {
+function MessageSend({title, className}) {
   return (
-    <div className="col-12 col-lg-8 d-flex justify-content-center align-items-end flex-column" >
+    <div className={className} >
     <div
       className="row mt-4 mx-1 shadow-lg rounded-3 p-0"
       style={{width:"70%",  background: baseColors.White }}

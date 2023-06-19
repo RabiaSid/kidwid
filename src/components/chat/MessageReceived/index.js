@@ -2,9 +2,9 @@ import React from "react";
 import baseColors from "@/constant";
 import {RobotIcon} from "@/assets";
 
-function MessageReceived({title}) {
+function MessageReceived({title,className}) {
   return (
-    <div className="col-12 col-lg-8 d-flex justify-content-end align-items-center" >
+    <div className={className} >
     <div
       className="row mt-4 mx-1 shadow-lg rounded-3 p-0"
       style={{ width: "100%", background: baseColors.White }}

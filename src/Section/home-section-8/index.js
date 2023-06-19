@@ -9,7 +9,7 @@ function HomeSectionEight() {
     <div
       className="row d-flex justify-content-center m-0 py-5 "
       style={{
-        background: baseColors.BlueColor,
+        background: `linear-gradient(to bottom, ${baseColors.BlueColorRGP}  27%, ${baseColors.GreenBlueColorRGP} 100%);`,
       }}
     >
       <div className="row m-0 ">

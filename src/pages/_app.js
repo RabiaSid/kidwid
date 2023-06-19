@@ -1,5 +1,4 @@
-// import '@/styles/globals.css'
-import styles from '@/styles/Home.module.css'
+import '@/styles/globals.css'
 import { Poppins } from 'next/font/google'
 import AppLayout from "@/components/layout";
 import 'bootstrap/dist/css/bootstrap.css';
@@ -19,7 +18,7 @@ export default function App({ Component, pageProps }) {
 
   return (
 
-    <main className={`${styles.main} ${poppins.className}`} >
+    <main className={` ${poppins.className}`} >
     <AppLayout >
     <AppHome />
     {/* <Component {...pageProps} /> */}

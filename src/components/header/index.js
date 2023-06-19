@@ -30,22 +30,22 @@ function AppHeader() {
               </Offcanvas.Header>
               <Offcanvas.Body >
                 <Nav className="justify-content-center flex-grow-1 ">
-                  <Nav.Link href="#" style={styles.HeaderText}>
+                  <Nav.Link href="#" style={styles.HeaderText} className="nav-link active primary-header-menu-item ">
                     Topic
                   </Nav.Link>
-                  <Nav.Link href="#" style={styles.HeaderText}>
+                  <Nav.Link href="#" style={styles.HeaderText} className="nav-link active primary-header-menu-item ">
                     How it Works
                   </Nav.Link>
-                  <Nav.Link href="#" style={styles.HeaderText}>
+                  <Nav.Link href="#" style={styles.HeaderText} className="nav-link active primary-header-menu-item ">
                     Features
                   </Nav.Link>
-                  <Nav.Link href="#" style={styles.HeaderText}>
+                  <Nav.Link href="#" style={styles.HeaderText} className="nav-link active primary-header-menu-item ">
                     Pricing
                   </Nav.Link>
-                  <Nav.Link href="#" style={styles.HeaderText}>
+                  <Nav.Link href="#" style={styles.HeaderText} className="nav-link active primary-header-menu-item ">
                     FAQ
                   </Nav.Link>
-                  <Nav.Link href="#" style={styles.HeaderText}>
+                  <Nav.Link href="#" style={styles.HeaderText} className="nav-link active primary-header-menu-item ">
                     Vision
                   </Nav.Link>
                 </Nav>

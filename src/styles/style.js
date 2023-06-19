@@ -115,8 +115,35 @@ export const styles = {
       },
       CheckBorder:{
         border:'2px solid red'
-      }
-      
-  
-  };
+      },
+      slider_arrow_Prev:{
+        borderRadius:'20px',
+        height:"40px",
+        width:"40px",
+        background:baseColors.White,
+        border:'none',
+        margin:'10px',
+        padding:'5px'
+      },
+      slider_arrow_Back:{
+        borderRadius:'20px',
+        height:"40px",
+        width:"40px",
+        background:baseColors.White,
+        border:'none',
+        margin:'10px',
+        padding:'5px'
 
+
+      },
+      slider_arrow_Text:{
+        fontSize:'20px'
+      },
+      IconYellow:{
+        margin:'5px',
+        fontSize:'35px',
+        color:baseColors.IconYellow
+      },
+      
+  };
+  

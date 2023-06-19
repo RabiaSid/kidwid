@@ -11,20 +11,33 @@ import baseColors from "@/constant";
 function HomeSectionNine() {
   return (
     <div
-      className="row d-flex justify-content-center m-0 py-5 mt-5"
+      className="row d-flex justify-content-center m-0 mt-5"
       style={{
         background: `linear-gradient(to bottom, ${baseColors.backgroundLight} 16%, ${baseColors.White} 100%)`,
       }}
     >
-      <div className="text-center py-1 m-0 p-0 ">
+      <div
+        className="text-center py-1 m-0 p-0 position-sticky fixed-top row py-5 w-100"
+        style={{
+          margin: 0,
+          padding: 0,
+          width: "auto",
+          height: "auto",
+          background: baseColors.backgroundLight,
+          opacity: "0.9",
+          top: "90px",
+          zIndex:1,
+        }}
+      >
         <span style={styles.Heading2}>Our Vision</span>
-      </div>
-
-      <div className="text-center py-2 m-0 p-0 ">
-        <text style={styles.Text1BlackBold}>
+        <text
+          className="text-center py-2 m-0 p-0 "
+          style={styles.Text1BlackBold}
+        >
           Igniting the Flames of Knowledge within each Child and Parent!
         </text>
       </div>
+
       <div className="col-12 col-md-11 col-lg-7  m-0">
         <div className="row m-0 d-flex justify-content-center align-items-center py-5">
           <div className="col-12 col-md-8 col-xl-8 d-flex justify-content-start align-items-center ps-0 me-auto  pt-5 pt-md-0">
@@ -52,19 +65,19 @@ function HomeSectionNine() {
         </div>
       </div>
       <div className="col-12 col-md-11 col-lg-7">
-      <div className="row d-flex justify-content-center align-items-center">
+        <div className="row d-flex justify-content-center align-items-center">
           <span style={styles.Heading2}>
             Revolutionize Education with AI-Driven Technologies
           </span>
-                <text style={styles.Text2Black}>
-                  As pioneers in AI-driven education, we refuse to settle for
-                  mediocrity. We are determined to break free from the confines
-                  of traditional learning methodologies and forge a new path. A
-                  path that leads to a brighter future, a future where every
-                  child has access to the tools and resources they need to
-                  thrive in this ever-evolving world.
-                </text>
-      </div>
+          <text style={styles.Text2Black}>
+            As pioneers in AI-driven education, we refuse to settle for
+            mediocrity. We are determined to break free from the confines of
+            traditional learning methodologies and forge a new path. A path that
+            leads to a brighter future, a future where every child has access to
+            the tools and resources they need to thrive in this ever-evolving
+            world.
+          </text>
+        </div>
       </div>
       <div className="col-12 col-md-11 col-lg-7  m-0">
         <div className="row m-0 d-flex justify-content-center align-items-center">

@@ -10,26 +10,18 @@ import baseColors from "@/constant";
 function HomeSectionThree() {
   return (
     <div
-      className="row d-flex justify-content-center m-0  py-5 position-relative"
-      style={{
-        background: baseColors.backgroundLight,
-      }}
-    >
-      
-      <div className="text-center py-1 m-0 p-0 position-sticky fixed-top row"
-       style={{
-            margin: 0,
-            padding: 0,
-            width: "auto",
-            height: "auto",
-            backgroundColor: "white",
-            top:'90px'
-            
-          }}>
-        <span style={styles.Heading2}>What We Offer</span>
-        <text className="text-center py-2 m-0 p-0 " style={styles.Text1BlackBold}>Education that Goes Beyond the Traditional Classroom</text>
-        
-      </div>
+    className="row d-flex justify-content-center m-0 py-5"
+    style={{
+      background: baseColors.backgroundLight,
+    }}
+  >
+    <div className="text-center py-1 m-0 p-0 ">
+      <span style={styles.Heading2}>What We Offer</span>
+    </div>
+
+    <div className="text-center py-2 m-0 p-0 ">
+      <text style={styles.Text1BlackBold}>Education that Goes Beyond the Traditional Classroom</text>
+    </div>
       
       <div className="col-12 col-md-11 col-lg-7  m-0">
         <div className="row m-0 d-flex justify-content-center align-items-center py-5">

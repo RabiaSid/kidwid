@@ -7,7 +7,7 @@ function ReviewCard({ data }) {
   return (
     <div
     key={data.key}
-    className="px-4 pt-5 pb-4 shadow-lg"
+    className="px-4 pt-5 pb-4 m-3 shadow"
     style={{
       background: baseColors.White,
       borderRadius: "20px",
@@ -29,19 +29,19 @@ function ReviewCard({ data }) {
       <p>
         {" "}
         <span>
-          <AiFillStar />
+          <AiFillStar style={styles.IconYellow}/>
         </span>
         <span>
-          <AiFillStar />
+          <AiFillStar style={styles.IconYellow}/>
         </span>
         <span>
-          <AiFillStar />
+          <AiFillStar style={styles.IconYellow}/>
         </span>
         <span>
-          <AiFillStar />
+          <AiFillStar style={styles.IconYellow}/>
         </span>
         <span>
-          <AiFillStar />
+          <AiFillStar style={styles.IconYellow}/>
         </span>
       </p>
     </div>
