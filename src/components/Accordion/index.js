@@ -1,7 +1,11 @@
-import baseColors from "@/constant";
 import React from "react";
+import baseColors from "@/constant";
+import { FaHome } from "react-icons/fa";
+
+
 
 function Accordion() {
+  const [expanded, setExpanded] = React.useState(true);
   return (
     <div className="accordion accordion-flush" id="accordionFlushExample">
       <div
@@ -9,22 +13,16 @@ function Accordion() {
         style={{ background: baseColors.GreenColor, color: baseColors.White }}
       >
         <h2 className="accordion-header" id="flush-headingOne">
+          
           <button
-            className="accordion-button collapsed"
-            style={{
-              background: baseColors.GreenColor,
-              color: baseColors.White,
-              border:'2px solid' ,
-              borderColor:baseColors.White,
-              borderBottom:'0',
-            }}
-            type="button"
+            class="accordion-button collapsed" type="button" 
             data-bs-toggle="collapse"
             data-bs-target="#flush-collapseOne"
             aria-expanded="false"
             aria-controls="flush-collapseOne"
+             onClick={()=>setExpanded(!expanded)}
           >
-            What age group is KidWiz designed for?
+            <FaHome  /><p className="right-align">What age group is KidWiz designed for?</p>
           </button>
         </h2>
         <div
