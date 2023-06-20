@@ -11,7 +11,7 @@ import baseColors from "@/constant";
 function HomeSectionNine() {
   return (
     <div
-      className="row d-flex justify-content-center m-0 mt-5"
+      className="row d-flex justify-content-center m-0 mt-5 position-relative"
       style={{
         background: `linear-gradient(to bottom, ${baseColors.backgroundLight} 16%, ${baseColors.White} 100%)`,
       }}

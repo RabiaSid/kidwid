@@ -7,19 +7,19 @@ import { motion } from "framer-motion";
 const ChatAnime = () => {
   const divVariants1 = {
     hidden1: { opacity: 0 },
-    visible1: { opacity: 1, transition: { duration: 1 } },
+    visible1: { opacity: 0.9, transition: { duration: 1 } },
   };
   const divVariants2 = {
     hidden2: { opacity: 0 },
-    visible2: { opacity: 1, transition: { duration: 2 } },
+    visible2: { opacity: 0.9, transition: { duration: 3 } },
   };
   const divVariants3 = {
     hidden3: { opacity: 0 },
-    visible3: { opacity: 1, transition: { duration: 3 } },
+    visible3: { opacity: 0.9, transition: { duration: 5 } },
   };
   const divVariants4 = {
     hidden4: { opacity: 0 },
-    visible4: { opacity: 1, transition: { duration: 4 } },
+    visible4: { opacity: 0.9, transition: { duration: 7 } },
   };
 
   return (

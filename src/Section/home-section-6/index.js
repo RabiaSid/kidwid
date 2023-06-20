@@ -7,7 +7,7 @@ function HomeSectionSix() {
   return (
     
       <div
-        className="row m-0"
+        className="row m-0 "
         style={{
           background: baseColors.backgroundLight,
         }}

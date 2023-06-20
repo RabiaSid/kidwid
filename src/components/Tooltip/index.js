@@ -1,6 +1,8 @@
 import React from 'react'
+import { Tooltip } from 'antd';
 
-function PrimaryButton({ className,  height, width, color, backgroundColor, title, fontWeight, borderRadius, fontSize, opacity }) {
+function TooltipButtonAntd({ className, height, width, color, backgroundColor, title, title2, fontWeight, borderRadius, fontSize, opacity }) {
+ 
     const border = backgroundColor === 'transparent' ? `2px solid ${baseColors.primaryColor}` : "none"
 
     const styles = {
@@ -22,13 +24,11 @@ function PrimaryButton({ className,  height, width, color, backgroundColor, titl
     }
 
     return (
-        <button
-        type="button" 
-        style={styles.button} 
-        className={className}>
-            {title}
-        </button>
-    )
+    <Tooltip style={styles.button} className={className} title={title} >
+    <span>{title2}</span>
+  </Tooltip>
+  )
 }
 
-export default PrimaryButton
+export default TooltipButtonAntd
+

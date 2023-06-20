@@ -1,28 +1,32 @@
 import React from "react";
 import baseColors from "@/constant";
-import { FaHome } from "react-icons/fa";
 
 
 
 function Accordion() {
-  const [expanded, setExpanded] = React.useState(true);
   return (
     <div className="accordion accordion-flush" id="accordionFlushExample">
       <div
         className="accordion-item"
-        style={{ background: baseColors.GreenColor, color: baseColors.White }}
       >
         <h2 className="accordion-header" id="flush-headingOne">
-          
+       
           <button
-            class="accordion-button collapsed" type="button" 
+            className="accordion-button collapsed"
+          
+          style={{
+              border:'2px solid' ,
+              borderColor:baseColors.White,
+              borderBottom:'0',
+            }}
+
+            type="button"
             data-bs-toggle="collapse"
             data-bs-target="#flush-collapseOne"
             aria-expanded="false"
             aria-controls="flush-collapseOne"
-             onClick={()=>setExpanded(!expanded)}
           >
-            <FaHome  /><p className="right-align">What age group is KidWiz designed for?</p>
+            What age group is KidWiz designed for?
           </button>
         </h2>
         <div
@@ -32,7 +36,10 @@ function Accordion() {
           data-bs-parent="#accordionFlushExample"
           style={{border:'none'}}
         >
-          <div className="accordion-body">
+          <div className="accordion-body"  style={{
+            background: baseColors.White,
+            color: baseColors.GreenColor
+            }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
             risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
             hendrerit cursus vestibulum.
@@ -45,10 +52,8 @@ function Accordion() {
       >
         <h2 className="accordion-header" id="flush-headingTwo">
           <button
-            className="accordion-button collapsed"
+            className="accordion-button collapsed "
             style={{
-              background: baseColors.GreenColor,
-              color: baseColors.White,
               border:'2px solid' ,
               borderColor:baseColors.White,
               borderBottom:'0',
@@ -69,7 +74,10 @@ function Accordion() {
           data-bs-parent="#accordionFlushExample"
           style={{border:'none'}}
         >
-          <div className="accordion-body">
+          <div className="accordion-body" style={{
+            background: baseColors.White,
+            color: baseColors.GreenColor
+            }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
             risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
             hendrerit cursus vestibulum.
@@ -82,10 +90,8 @@ function Accordion() {
       >
         <h2 className="accordion-header" id="flush-headingThree">
           <button
-            className="accordion-button collapsed"
+            className="accordion-button collapsed "
             style={{
-              background: baseColors.GreenColor,
-              color: baseColors.White,
               border:'2px solid' ,
               borderColor:baseColors.White,
               borderBottom:'0',
@@ -106,7 +112,10 @@ function Accordion() {
           data-bs-parent="#accordionFlushExample"
           style={{border:'none'}}
         >
-          <div className="accordion-body">
+          <div className="accordion-body" style={{
+            background: baseColors.White,
+            color: baseColors.GreenColor
+            }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
             risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
             hendrerit cursus vestibulum.
@@ -119,10 +128,8 @@ function Accordion() {
       >
         <h2 className="accordion-header" id="flush-headingFour">
           <button
-            className="accordion-button collapsed"
+            className="accordion-button collapsed "
             style={{
-              background: baseColors.GreenColor,
-              color: baseColors.White,
               border:'2px solid' ,
               borderColor:baseColors.White,
               borderBottom:'0',
@@ -143,7 +150,10 @@ function Accordion() {
           data-bs-parent="#accordionFlushExample"
           style={{border:'none'}}
         >
-          <div className="accordion-body">
+          <div className="accordion-body" style={{
+            background: baseColors.White,
+            color: baseColors.GreenColor
+            }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
             risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
             hendrerit cursus vestibulum.
@@ -156,10 +166,8 @@ function Accordion() {
       >
         <h2 className="accordion-header" id="flush-headingFive">
           <button
-            className="accordion-button collapsed"
+            className="accordion-button collapsed "
             style={{
-              background: baseColors.GreenColor,
-              color: baseColors.White,
               border:'2px solid' ,
               borderColor:baseColors.White,
               borderBottom:'0',
@@ -180,7 +188,10 @@ function Accordion() {
           data-bs-parent="#accordionFlushExample"
           style={{border:'none'}}
         >
-          <div className="accordion-body">
+          <div className="accordion-body" style={{
+            background: baseColors.White,
+            color: baseColors.GreenColor
+            }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
             risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
             hendrerit cursus vestibulum.
@@ -193,10 +204,8 @@ function Accordion() {
       >
         <h2 className="accordion-header" id="flush-headingSix">
           <button
-            className="accordion-button collapsed"
+            className="accordion-button collapsed "
             style={{
-              background: baseColors.GreenColor,
-              color: baseColors.White,
               border:'2px solid' ,
               borderColor:baseColors.White,
               borderBottom:'0',
@@ -217,7 +226,10 @@ function Accordion() {
           data-bs-parent="#accordionFlushExample"
           style={{border:'none'}}
         >
-          <div className="accordion-body">
+          <div className="accordion-body" style={{
+            background: baseColors.White,
+            color: baseColors.GreenColor
+            }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
             risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
             hendrerit cursus vestibulum.
@@ -230,10 +242,8 @@ function Accordion() {
       >
         <h2 className="accordion-header" id="flush-headingSeven">
           <button
-            className="accordion-button collapsed"
+            className="accordion-button collapsed "
             style={{
-              background: baseColors.GreenColor,
-              color: baseColors.White,
               border:'2px solid' ,
               borderColor:baseColors.White,
               borderBottom:'0',
@@ -254,7 +264,10 @@ function Accordion() {
           data-bs-parent="#accordionFlushExample"
           style={{border:'none'}}
         >
-          <div className="accordion-body">
+          <div className="accordion-body" style={{
+            background: baseColors.White,
+            color: baseColors.GreenColor
+            }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
             risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
             hendrerit cursus vestibulum.
@@ -267,10 +280,8 @@ function Accordion() {
       >
         <h2 className="accordion-header" id="flush-headingEight">
           <button
-            className="accordion-button collapsed"
+            className="accordion-button collapsed "
             style={{
-              background: baseColors.GreenColor,
-              color: baseColors.White,
               border:'2px solid' ,
               borderColor:baseColors.White,
               borderBottom:'0',
@@ -291,7 +302,10 @@ function Accordion() {
           data-bs-parent="#accordionFlushExample"
           style={{border:'none'}}
         >
-          <div className="accordion-body">
+          <div className="accordion-body" style={{
+            background: baseColors.White,
+            color: baseColors.GreenColor
+            }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
             risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
             hendrerit cursus vestibulum.
@@ -304,10 +318,8 @@ function Accordion() {
       >
         <h2 className="accordion-header" id="flush-headingNine">
           <button
-            className="accordion-button collapsed"
+            className="accordion-button collapsed "
             style={{
-              background: baseColors.GreenColor,
-              color: baseColors.White,
               border:'2px solid' ,
               borderColor:baseColors.White,
             }}
@@ -327,7 +339,10 @@ function Accordion() {
           data-bs-parent="#accordionFlushExample"
           style={{border:'none'}}
         >
-          <div className="accordion-body">
+          <div className="accordion-body" style={{
+            background: baseColors.White,
+            color: baseColors.GreenColor
+            }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam erat
             risus, lacinia sit amet finibus sed, sagittis sed ligula. Praesent
             hendrerit cursus vestibulum.

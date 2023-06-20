@@ -7,7 +7,7 @@ import PlanSwitchSelector from "@/components/SwitchSelector";
 function HomeSectionSeven() {
   return (
     <div
-      className="row d-flex justify-content-center m-0 py-5"
+      className="row d-flex justify-content-center m-0 py-5 "
       style={{
         background: baseColors.White,
       }}

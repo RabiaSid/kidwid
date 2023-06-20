@@ -136,6 +136,20 @@ export const styles = {
 
 
       },
+      // btnPress:{
+      //   background: baseColors.White,
+      //   color: baseColors.GreenColor,
+      //   border:'2px solid' ,
+      //   borderColor:baseColors.White,
+      //   borderBottom:'0',
+      // },
+      // btnNormal:{
+      //   background: baseColors.GreenColor,
+      //   color: baseColors.White,
+      //   border:'2px solid' ,
+      //   borderColor:baseColors.White,
+      //   borderBottom:'0',
+      // },
       slider_arrow_Text:{
         fontSize:'20px'
       },

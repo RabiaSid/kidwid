@@ -2,18 +2,17 @@ import React from "react";
 import { BannerImage5, BannerImage6 } from "@/assets";
 import { styles } from "@/styles/style";
 import baseColors from "@/constant";
-import CheckParagraphAnime from "../CheckParagraphAnime";
 
 function HomeSectionFive() {
   return (
     <div
-      className="row d-flex justify-content-center m-0 position-absoulte"
+      className="row d-flex justify-content-center m-0 "
       style={{
         background: `linear-gradient(to bottom, ${baseColors.backgroundLight} 16%, ${baseColors.White} 100%)`,
       }}
     >
       <div
-        className="text-center py-1 m-0 p-0 position-sticky fixed-top row py-5 w-100"
+        className="text-center position-sticky fixed-top  row py-5 w-100"
         style={{
           margin: 0,
           padding: 0,
@@ -33,7 +32,6 @@ function HomeSectionFive() {
           8 Steps to Begin Your Child’s Journey
         </text>
       </div>
-      {/* <CheckParagraphAnime /> */}
       <div className="col-12 col-md-11 col-lg-7  m-0">
         <div className="row m-0 d-flex justify-content-center align-items-center py-5">
           <div className="col-12 col-md-8 col-xl-8 d-flex justify-content-start align-items-center ps-0 me-auto  pt-5 pt-md-0">
