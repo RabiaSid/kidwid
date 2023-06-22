@@ -51,13 +51,13 @@ function AppHeader() {
                 </Nav>
                 <PrimaryButton
                   title="GET STARTED FOR FREE"
-                  backgroundColor={baseColors.GreenColor}
-                  //  width={"18vw"}
-                  //  height={"6vh"}
-                  fontSize={"18px"}
-                  borderRadius={"7px"}
-                  color={baseColors.White}
-                  className="px-4  m-0"
+                  // backgroundColor={baseColors.GreenColor}
+                  // //  width={"18vw"}
+                  // //  height={"6vh"}
+                  // fontSize={"18px"}
+                  // borderRadius={"7px"}
+                  // color={baseColors.White}
+                  className="px-4  m-0 headerButton"
                 />
               </Offcanvas.Body>
             </Navbar.Offcanvas>

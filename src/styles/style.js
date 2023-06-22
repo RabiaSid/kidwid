@@ -133,23 +133,7 @@ export const styles = {
         border:'none',
         margin:'10px',
         padding:'5px'
-
-
       },
-      // btnPress:{
-      //   background: baseColors.White,
-      //   color: baseColors.GreenColor,
-      //   border:'2px solid' ,
-      //   borderColor:baseColors.White,
-      //   borderBottom:'0',
-      // },
-      // btnNormal:{
-      //   background: baseColors.GreenColor,
-      //   color: baseColors.White,
-      //   border:'2px solid' ,
-      //   borderColor:baseColors.White,
-      //   borderBottom:'0',
-      // },
       slider_arrow_Text:{
         fontSize:'20px'
       },
@@ -158,6 +142,28 @@ export const styles = {
         fontSize:'35px',
         color:baseColors.IconYellow
       },
+      
+      tooltipBtn:{
+        color:baseColors.Black,
+        width:"15vw",
+        height:"6vh",
+        fontSize:"18px",
+        borderRadius:"7px"
+      },
+      tooltipouterBox:{
+        border:'1px solid red',
+        // display:'flex',
+        // flexDirection:'column',
+        // justifyContent:'center',
+        // alignItem:'start'
+        
+      },
+      tooltipInnerBox:{
+        backgroundColor:baseColors.White,
+        color:baseColors.Black,
+        height:'15vh',
+        width:"15vw",
+      }
       
   };
   

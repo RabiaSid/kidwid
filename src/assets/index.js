@@ -1,6 +1,7 @@
 import HeaderIcon from './Header-Icon.svg'
 import BlueBackground from './BlueBackground.png'
 import WhiteBlueBackground from './WhiteBlueBackground.jpg'
+import WhiteBlueBackground2 from './WhiteBlueBackground2.png'
 import RainbowBackground from './Rainbowbackground.png'
 import MultiBackground from './MultiBackground.png'
 import RobotIcon from './RobotIcon.png'
@@ -32,6 +33,7 @@ export{
     HeaderIcon,
     BlueBackground,
     WhiteBlueBackground,
+    WhiteBlueBackground2,
     MultiBackground,
     RobotIcon,
     UserIcon,

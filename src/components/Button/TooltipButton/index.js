@@ -1,23 +1,25 @@
 import React from "react";
+import baseColors from "@/constant";
+import { Tooltip } from "antd";
+import { styles } from "@/styles/style";
 
 function TooltipButton({
-  className,
   height,
   width,
   color,
+  border,
   backgroundColor,
-  title,
   fontWeight,
   borderRadius,
   fontSize,
   opacity,
+  overlayClassName,
+  // overlayStyle,
+  // overlayInnerStyle,
+  title,
+  main,
 }) {
-  const border =
-    backgroundColor === "transparent"
-      ? `2px solid ${baseColors.primaryColor}`
-      : "none";
-
-  const styles = {
+  const stylee = {
     button: {
       height: height && height,
       minHeight: "30px",
@@ -34,15 +36,23 @@ function TooltipButton({
       opacity: opacity,
     },
   };
-
   return (
-    <button
-      style={styles.button}
-      className={className}
-      data-toggle="tooltip" data-placement="bottom"
+    <Tooltip
+      // className={className} not working
+      mouseEnterDelay={0.1}
+      title={title}
+      overlayClassName={overlayClassName} //tooltip classname
+      overlayStyle={styles.tooltipouterBox}
+      overlayInnerStyle={styles.tooltipInnerBox} //tooltip style
+      placement="d-flex justify-content-end align-items-end "
+      
+      //style={{background:baseColors.GreenColor}} not working
     >
-      {title}
-    </button>
+
+      <div className="btn shadow d-flex justify-content-center align-items-center " style={stylee.button}>
+        <span>{main}</span>
+      </div>
+    </Tooltip>
   );
 }
 

@@ -5,13 +5,13 @@ import baseColors from "@/constant";
 
 function HomeSectionTwo() {
   return (
-    <div className="row m-0" style={{background: `linear-gradient(to bottom, ${baseColors.White}  16%, ${baseColors.backgroundLight}  100%)`}}>
+    <div className="row m-0" style={{background: `linear-gradient(to bottom, ${baseColors.White}  46%, ${baseColors.backgroundLight}  100%)`}}>
     <div
       className=" d-flex align-items-center justify-content-center  p-0 "
       style={{
         background: `url(${BlueBackground}) no-repeat`,
         height: "auto",
-        minHeight:"80vh",
+        minHeight:"70vh",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition:'center',

@@ -1,4 +1,4 @@
-import { BannerImage1, WhiteBlueBackground } from "@/assets";
+import { BannerImage1, WhiteBlueBackground, WhiteBlueBackground2 } from "@/assets";
 import React, { useState } from "react";
 import { styles } from "@/styles/style";
 import baseColors from "@/constant";
@@ -15,18 +15,19 @@ function HomeSectionone() {
       <div
         className="col-12 "
         style={{
-          background: `url(${WhiteBlueBackground})`,
+          background: `url(${WhiteBlueBackground2})`,
           backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
+          backgroundSize:"cover",
           height: "auto",
-          minHeight: "80vh",
+          minHeight: "70vh",
+          width:"100%",
           backgroundPosition: "center",
         }}
       >
         <div className="row m-0 d-flex justify-content-center align-items-center py-5">
           <div className="col-12 col-md-10 col-lg-8 col-xl-6 pt-5 pt-md-0">
             <div className="row d-flex justify-content-center align-items-center py-4">
-              <div className="col-12 col-lg-10 d-flex justify-content-center align-items-center px-0 pt-5 pt-md-0">
+              <div className="col-12 col-lg-9 d-flex justify-content-center align-items-center px-0 pt-5 pt-md-0">
                 <div className="row m-0">
                   <span style={styles.Heading1} className="p-0">
                     Unlock Your{" "}
@@ -48,7 +49,7 @@ function HomeSectionone() {
                   </div>
                 </div>
               </div>
-              <div className="col-12  col-lg-2 d-flex justify-content-center">
+              <div className="col-12  col-lg-3 d-flex justify-content-center">
                 <img
                   src={BannerImage1}
                   style={{ height: "70vh", width: "auto" }}

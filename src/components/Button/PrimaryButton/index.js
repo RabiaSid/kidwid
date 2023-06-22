@@ -1,34 +1,37 @@
-import React from 'react'
+import React from "react";
+import baseColors from "@/constant";
+import _ from "lodash";
 
-function PrimaryButton({ className,  height, width, color, backgroundColor, title, fontWeight, borderRadius, fontSize, opacity }) {
-    const border = backgroundColor === 'transparent' ? `2px solid ${baseColors.primaryColor}` : "none"
+const defaultStyles = {
+  button: {
+    elevation: 8,
+    backgroundColor: baseColors.lightColor,
+    border: baseColors.sucessColor,
+    color: baseColors.primaryTextColor,
+    borderRadius: 50,
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    marginVertical: 10,
+    margin: 10,
+    width: 100,
+    justifyContent: "center",
+    alignItems: "center",
+  }
+};
 
-    const styles = {
-        button: {
-            height: height && height,
-            minHeight: "30px",
-            minWidth: '170px',
-            width: width && width,
-            color,
-            fontWeight: fontWeight && fontWeight,
-            fontSize: fontSize ? fontSize : '15px',
-            border,
-            backgroundColor,
-            textAlign: 'center',
-            borderRadius: borderRadius ? borderRadius : "2px",
-            cursor: 'pointer',
-            opacity:opacity,
-        }
+function PrimaryButton({ className, title, styles: customStyles }) {
+  
+    let styles = defaultStyles.ButtonContainer;
+    if (!_.isEmpty(customStyles)) {
+      styles = { styles, ...customStyles };
     }
+  
 
-    return (
-        <button
-        type="button" 
-        style={styles.button} 
-        className={className}>
-            {title}
-        </button>
-    )
+  return (
+    <button type="button" style={styles} className={className}>
+      {title}
+    </button>
+  );
 }
 
-export default PrimaryButton
+export default PrimaryButton;

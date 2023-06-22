@@ -1,7 +1,8 @@
 import { RainbowBackground } from "@/assets";
-import TooltipButton  from "@/components/Button/TooltipButton";
+import TooltipButton from "@/components/Button/TooltipButton";
 import baseColors from "@/constant";
 import { styles } from "@/styles/style";
+import { color } from "framer-motion";
 
 import React from "react";
 
@@ -11,7 +12,6 @@ function HomeSectionFour() {
       className="row d-flex justify-content-center m-0  py-5 my-5"
       style={{
         background: baseColors.White,
-        
       }}
     >
       <div
@@ -37,51 +37,57 @@ function HomeSectionFour() {
         </text>
       </div>
       <div className="col-9">
+        {/* <TooltipButton 
+        overlayClassName='border'
+        overlayStyle={{background:baseColors.OrangeColor}}
+        title='one'
+        main='two'
+        background={baseColors.OrangeColor}
+        /> */}
         <div className="row d-flex justify-content-center m-0 pt-4 ">
           <div className="col-12 col-sm-6 col-lg-3 py-2 d-flex justify-content-center">
-            <TooltipButton 
-            className="btn shadow"
+            <TooltipButton
               title="Social Studies"
+              main="Social Studies"
               backgroundColor={baseColors.OrangeColor}
+              // overlayClassName="d-flex justify-content-center align-items-center"
+              // overlayStyle={{}}
+              // overlayInnerStyle={{}}
               width={"15vw"}
               height={"6vh"}
               fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
-              
             />
           </div>
           <div className="col-12 col-sm-6 col-lg-3 py-2 d-flex justify-content-center">
-            <TooltipButton 
-            className="btn shadow"
+            <TooltipButton
               title="Life Skills"
+              main="Life Skills"
               backgroundColor={baseColors.PinkColor}
               width={"15vw"}
               height={"6vh"}
               fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
-              
             />
           </div>
           <div className="col-12 col-sm-6 col-lg-3 py-2 d-flex justify-content-center">
-            <TooltipButton 
-            className="btn shadow"
+            <TooltipButton
               title="Biology"
+              main="Biology"
               backgroundColor={baseColors.GreenColor}
               width={"15vw"}
               height={"6vh"}
               fontSize={"18px"}
               borderRadius={"7px"}
               color={baseColors.White}
-              
             />
           </div>
-          </div>
-        <div className="row d-flex justify-content-center m-0 py-1">
+        </div>
+        {/* <div className="row d-flex justify-content-center m-0 py-1">
           <div className="col-12 col-sm-6 col-lg-3 py-2 d-flex justify-content-center">
-            <TooltipButton 
-            className="btn shadow"
+            <TooltipButton
               title="Math"
               backgroundColor={baseColors.PurpleColor}
               width={"15vw"}
@@ -93,8 +99,7 @@ function HomeSectionFour() {
             />
           </div>
           <div className="col-12 col-sm-6 col-lg-3 py-2 d-flex justify-content-center">
-            <TooltipButton 
-            className="btn shadow"
+            <TooltipButton
               title="English"
               backgroundColor={baseColors.BlueColor}
               width={"15vw"}
@@ -106,8 +111,7 @@ function HomeSectionFour() {
             />
           </div>
           <div className="col-12 col-sm-6 col-lg-3 py-2 d-flex justify-content-center">
-            <TooltipButton 
-            className="btn shadow"
+            <TooltipButton
               title="Critical Thinking"
               backgroundColor={baseColors.PinkColor}
               width={"15vw"}
@@ -119,8 +123,7 @@ function HomeSectionFour() {
             />
           </div>
           <div className="col-12 col-sm-6 col-lg-3 py-2 d-flex justify-content-center">
-            <TooltipButton 
-            className="btn shadow"
+            <TooltipButton
               title="Music"
               backgroundColor={baseColors.PurpleColor}
               width={"15vw"}
@@ -134,8 +137,7 @@ function HomeSectionFour() {
         </div>
         <div className="row d-flex justify-content-center m-0 py-1">
           <div className="col-12 col-sm-6 col-lg-3 py-2 d-flex justify-content-center">
-            <TooltipButton 
-            className="btn shadow"
+            <TooltipButton
               title="Environment"
               backgroundColor={baseColors.GreenColor}
               width={"15vw"}
@@ -147,8 +149,7 @@ function HomeSectionFour() {
             />
           </div>
           <div className="col-12 col-sm-6 col-lg-3 py-2 d-flex justify-content-center">
-            <TooltipButton 
-            className="btn shadow"
+            <TooltipButton
               title="Languages"
               backgroundColor={baseColors.OrangeColor}
               width={"15vw"}
@@ -160,8 +161,7 @@ function HomeSectionFour() {
             />
           </div>
           <div className="col-12 col-sm-6 col-lg-3 py-2 d-flex justify-content-center">
-            <TooltipButton 
-            className="btn shadow"
+            <TooltipButton
               title="Coding"
               backgroundColor={baseColors.BlueColor}
               width={"15vw"}
@@ -175,8 +175,7 @@ function HomeSectionFour() {
           </div>
         <div className="row d-flex justify-content-center m-0 pb-4">
           <div className="col-12 col-sm-6 col-lg-3 py-2 d-flex justify-content-center">
-            <TooltipButton 
-            className="btn shadow"
+            <TooltipButton
               title="Science"
               backgroundColor={baseColors.GreenColor}
               width={"15vw"}
@@ -188,8 +187,7 @@ function HomeSectionFour() {
             />
           </div>
           <div className="col-12 col-sm-6 col-lg-3 py-2 d-flex justify-content-center">
-            <TooltipButton 
-            className="btn shadow"
+            <TooltipButton
               title="Emotions"
               backgroundColor={baseColors.PinkColor}
               width={"15vw"}
@@ -201,8 +199,7 @@ function HomeSectionFour() {
             />
           </div>
           <div className="col-12 col-sm-6 col-lg-3 py-2 d-flex justify-content-center">
-            <TooltipButton 
-            className="btn shadow"
+            <TooltipButton
               title="Money"
               backgroundColor={baseColors.PurpleColor}
               width={"15vw"}
@@ -214,8 +211,7 @@ function HomeSectionFour() {
             />
           </div>
           <div className="col-12 col-sm-6 col-lg-3 py-2 d-flex justify-content-center">
-            <TooltipButton 
-            className="btn shadow"
+            <TooltipButton
               title="Entrepreneurship"
               backgroundColor={baseColors.PinkColor}
               width={"15vw"}
@@ -226,7 +222,7 @@ function HomeSectionFour() {
               
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
