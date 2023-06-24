@@ -13,7 +13,9 @@ const baseColors = {
     White:"#ffffff",
     Black:"#000000",
     backgroundLight:"#EFF1F3",
-    LightGreyColor:"#808080"
+    LightGreyColor:"#808080",
+    shadowGrey:"#e0e8d1",
+    yellow:"#FFF275"
 
   };
   

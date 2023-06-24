@@ -122,7 +122,10 @@ export const styles = {
         width:"40px",
         background:baseColors.White,
         border:'none',
-        margin:'10px',
+        marginTop:'5px',
+        marginRight:'5px',
+        marginBottom:'5px',
+        // margin:'10px',
         padding:'5px'
       },
       slider_arrow_Back:{
@@ -140,7 +143,7 @@ export const styles = {
       IconYellow:{
         margin:'5px',
         fontSize:'35px',
-        color:baseColors.IconYellow
+        color:baseColors.yellow
       },
       
       tooltipBtn:{
@@ -152,6 +155,7 @@ export const styles = {
       },
       tooltipouterBox:{
         border:'1px solid red',
+        marginTop:'25px'
         // display:'flex',
         // flexDirection:'column',
         // justifyContent:'center',
@@ -163,7 +167,8 @@ export const styles = {
         color:baseColors.Black,
         height:'15vh',
         width:"15vw",
-      }
+      },
+
       
   };
   

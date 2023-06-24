@@ -1,7 +1,7 @@
 import React from "react";
 import baseColors from "@/constant";
 import ReviewCard from "@/components/card/Reviewcard";
-import CheckCarousel from "@/components/CheckCarousel";
+import ReviewCarousel from "@/components/Carousel/ReviewCarousel";
 
 function HomeSectionSix() {
   return (
@@ -12,7 +12,7 @@ function HomeSectionSix() {
           background: baseColors.backgroundLight,
         }}
       >
-        <CheckCarousel />
+        <ReviewCarousel />
         {/* <div className="col-12 col-md-11 col-lg-8  m-0">
           
         </div> */}

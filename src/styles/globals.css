@@ -36,6 +36,10 @@
 .ant-tooltip{
   --antd-arrow-background-color: 0;
 }
+.btn:hover{
+  background-color: aqua;
+}
+
 
  
 

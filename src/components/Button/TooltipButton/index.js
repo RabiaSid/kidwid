@@ -44,9 +44,8 @@ function TooltipButton({
       overlayClassName={overlayClassName} //tooltip classname
       overlayStyle={styles.tooltipouterBox}
       overlayInnerStyle={styles.tooltipInnerBox} //tooltip style
-      placement="d-flex justify-content-end align-items-end "
+      placement="bottom"
       
-      //style={{background:baseColors.GreenColor}} not working
     >
 
       <div className="btn shadow d-flex justify-content-center align-items-center " style={stylee.button}>

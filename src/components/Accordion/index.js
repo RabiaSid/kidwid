@@ -75,7 +75,7 @@ function Accordion() {
   return (
     <Collapse
       bordered={false}
-      defaultActiveKey={["1"]}
+      defaultActiveKey={[""]}
       expandIcon={({ isActive }) => <UpOutlined rotate={isActive ? 180 : 0} />}
       style={{
         backgroundColor: baseColors.GreenColor,

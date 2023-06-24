@@ -5,12 +5,12 @@ import { BlueFlower1 } from "@/assets";
 import { styles } from "@/styles/style";
 import baseColors from "@/constant";
 import { AiFillStar } from "react-icons/ai";
-import ReviewCard from "./card/Reviewcard";
+import ReviewCard from "../card/Reviewcard";
 
 
 
 
-function CheckCarousel() {
+function ReviewCarousel() {
   const [sliderRef, setSliderRef] = useState(null);
   
 
@@ -21,7 +21,7 @@ function CheckCarousel() {
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
-    dots: true, 
+    dots: false, 
 
     responsive: [
       {
@@ -69,7 +69,7 @@ function CheckCarousel() {
     <div className="content row m-0 d-flex justify-content-center align-items-center py-5 ">
       <div className="col-10">
         <div className="row">
-          <div className="col-12 col-md-8 col-xl-5 d-flex justify-content-start align-items-center ps-0 me-auto  pt-5 pt-md-0">
+          <div className="col-12 col-md-5 col-lg-7 col-xl-6 d-flex justify-content-start align-items-center ps-0 me-auto  pt-5 pt-md-0">
             <div className="row m-0">
               <div className="text-left py-3 m-0 p-0 ">
                 <text style={styles.Text2bold}>
@@ -80,7 +80,7 @@ function CheckCarousel() {
               <div>
                 <button
                   onClick={sliderRef?.slickPrev}
-                  className="shadow-sm"
+                  className="shadow-sm "
                   style={styles.slider_arrow_Prev}
                 >
                   <FaChevronLeft style={styles.slider_arrow_Text} />
@@ -93,10 +93,7 @@ function CheckCarousel() {
                   <FaChevronRight style={styles.slider_arrow_Text} />
                 </button>
               </div>
-              <div className="border">
-                
-              </div>
-              <div className="col-4 text-justify py-1 m-0 p-0 ">
+              <div className="col-4 text-justify py-1 m-0 p-0 ms-3">
                 <img
                   src={BlueFlower1}
                   style={{ height: "10vh", width: "auto" }}
@@ -107,8 +104,7 @@ function CheckCarousel() {
           <Slider
             ref={setSliderRef}
             {...sliderSettings}
-            className="col-12 col-md-4 d-flex justify-content-center  "
-            style={{ border: "1px solid red" }}
+            className="col-12 col-md-7 col-lg-5 col-xl-4 d-flex justify-content-center  "
           >
             {ReviewCards.map((card, index) => {
               return <ReviewCard key={index} data={card} />;
@@ -120,4 +116,4 @@ function CheckCarousel() {
   );
 }
 
-export default CheckCarousel;
+export default ReviewCarousel;
